@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type="text/css" href="forder.css">
+    <title>Form sozinho em html</title>
+</head>
+<body>
+    <div>
+        <h1 id = "Titulo">Cadastro de desenvolvedores</h1>
+        <p id = "Subtitulo">Insira as informações :</p>
+        <br>
+    </div>
+    <form>
+        <fieldset class = "grupo">
+            <div>
+                <label for "Nome">Nome</label>
+                <input type = "text" name = "Nome" id = "Nome" required>
+            </div>
+            <br>
+
+            <div>
+                <label for "Sobrenome">Sobrenome</label>
+                <input type = "text" name="Sobrenome" id = "Sobrenome" required>
+            </div> 
+            <br>
+
+            <div class = "campo">
+                <label>Qual direção da programação você desenvolve?</label>
+                <br>
+                <label>
+                    <input type = "radio" name="devweb" value="FullStack" checked> FullStack
+                </label>
+
+                <label>
+                    <input type = "radio" name="devweb" value="FrontEnd"> FrontEnd
+                </label>
+
+                <label>
+                    <input type = "radio" name="devweb" value="Backend"> Backend
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for "Senioridade">Senioridade</label>"
+                <select id = "Senioridade">
+                    <option selected disabled ="">Selecione uma opção : </option>
+                    <option>Junior</option>
+                    <option>Pleno</option>
+                    <option>Senior</option>
+                </select>
+            </div>
+
+            <br><br>
+
+            <fieldset class = "grupo">
+                <div id = "checkbox">
+                    <label>Selecione as linguagens de programação que você utiliza : </label>
+                    <br> <br>
+
+                    <input type ="checkbox" id="tec1" name="tec1" value="html" checked>
+                    <label for="tec1">html</label>
+
+                    <input type = "checkbox" id = "tec2" name = "tec2" value="php">
+                    <label for = "tec2">php</label>
+
+                    <input type = "checkbox" id="tec3" name="tec3" value="python">
+                    <label for = "tec3">python</label>
+
+                    <input type = "checkbox" id = "tec4" name = "tec4" value = "javascript">
+                    <label for = "tec4">javascript</label>
+
+                    
+                </div>
+            </fieldset>
+
+
+
+
+
+        </fieldset>
+
+        <div class = "campo">
+            <br><br>
+            <label>Conte um pouco da sua experiencia : </label>
+            <textarea row = "6" style= "width : 26em" id = "experiencia" name = "experiencia"></textarea>
+        </div> <br>
+
+    </form>
+
+
+
+
+
+</body>
+</html>
